@@ -14,11 +14,44 @@ body {
 }
 
 .header {
-    width: 1440px;
+    width: 100%;
     height: 94px;
     background: #562EFF;
-    
+
 }
+
+.nav-logo img {
+    width: 40px;
+    margin-left: 242px;
+    margin-top: 26px;
+}
+
+/* nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 276px;
+    padding-bottom: 25px;
+    } */
+.manu {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: -40px;
+
+}
+
+nav li {
+    color: #FFFFFF;
+     
+}
+
+.profile-pic img{
+    margin-top:-30px;
+    margin-right: 250px;
+    float: right;
+
+}
+
 
 main {
     display: flex;
