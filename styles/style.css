@@ -7,9 +7,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* common styles or utility */
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #9F9F9F;
+}
+
+.header {
+    width: 1440px;
+    height: 94px;
+    background: #562EFF;
+    
 }
 
 main {
@@ -44,7 +52,7 @@ hr {
     margin-bottom: 30px;
 }
 
-.playres {
+.players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
@@ -113,7 +121,7 @@ hr {
                 Courses style 
 ----------------------------*/
 
-.courses{
+.courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
@@ -123,20 +131,24 @@ hr {
     width: 224px;
     height: 104px;
 }
-.course-info{
+
+.course-info {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.fa-star{
+
+.fa-star {
     font-size: 12px;
 }
-.fa-star.filled{
+
+.fa-star.filled {
     color: #FFC014;
 
 }
-.fa-star.empty{
+
+.fa-star.empty {
     color: #AEAEAE;
 
 }
@@ -150,48 +162,48 @@ hr {
  Media Queries
  --------------------------- */
 
- /* Mobile device */
+/* Mobile device */
 
- @media only screen and (max-width:688px) {
-    .container{
+@media only screen and (max-width:688px) {
+    .container {
         width: 100%;
     }
-    .players, .blogs, .courses{
-       grid-template-columns: repeat(1, 1fr);
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .player, .blog{
+
+    .player,
+    .blog {
         flex-direction: column;
     }
-    
-    
- }
 
- /* Tablet Device */
- @media only screen and (min-width:689px) and (max-width: 992px) {
 
-    .container{
+}
+
+/* Tablet Device */
+@media only screen and (min-width:689px) and (max-width: 992px) {
+
+    .container {
         width: 100%;
     }
 
-    .players, .courses{
-        grid-template-columns: repeat(1, 1fr);
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
         /* background-color: red; */
 
-     }
+    }
 
-     .blogs{
+    .blogs {
         grid-template-columns: repeat(1, 1fr);
         /* background-color: blueviolet; */
 
 
-     }
-
-     
-    
- }
+    }
 
 
 
-
-
-
+}
